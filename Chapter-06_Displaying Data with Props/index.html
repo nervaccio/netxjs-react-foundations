@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <div id="app"></div>
+
+
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/jsx">
+            // Attenzione se il tipo di tag non è text/jsx ma rimane text/javascript Babel non interpreta il JSX
+            const app = document.getElementById('app');
+
+            /*
+            function Header(props) {
+                // console.log(props)
+                return <h1>{`Cool ${props.title}`}</h1>
+            }
+            */
+
+            function Header({title}) {
+                // console.log(props)
+                return <h1>{title ? title : 'Default title'}</h1>
+            }
+
+            function HomePage() {
+                const keywords = ['Vercel', 'NextJS', 'Drupal', 'Acquia'];
+                return(
+                    <div>
+                        {/* Nesting components */}
+                        <Header title="React 💙"/>
+                        <Header/>
+                        <Header title="Asincrono 💘"/>
+                        <ul>
+                            {keywords.map((name) => (
+                                <li key={name}>{name}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )
+            }
+
+            ReactDOM.render(<HomePage />, app)
+        </script>
+    </body>
+</html>
