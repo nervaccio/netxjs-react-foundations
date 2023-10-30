@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            // api per selezionare un elemento del DOM che ha id = app (<div id="app")
+            const app = document.getElementById('app');
+
+            // api per creare un elemento (non ancora collegato al DOM) con tag <h1>
+            const header = document.createElement('h1');
+
+            const headerContent = document.createTextNode('Develop. Preview. Ship. 🚀');
+
+            header.appendChild(headerContent);
+
+            app.appendChild(header);
+
+        </script>
+    </body>
+</html>
