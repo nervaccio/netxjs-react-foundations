@@ -2,6 +2,8 @@
 
 The tutorial can be found at: [https://nextjs.org/learn/react-foundations](https://nextjs.org/learn/react-foundations)
 
+![9/9 Completed](nextjs-react-foundations.png)
+
 ## Credits
 
 NextJS.org - tutorial
