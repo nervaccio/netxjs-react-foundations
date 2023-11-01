@@ -4,7 +4,7 @@ function Header({ title }) {
 }
 
 export default function HomePage() {
-  const names = ['Giovanni Colasante', 'Asincrono', 'Krav Maga'];
+  const names = ['Giovanni Colasante', 'Asincrono', 'NextJs', 'Krav Maga'];
 
   const [likes, setLikes] = useState(0);
 
