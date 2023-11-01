@@ -5,8 +5,7 @@ const nextConfig = {
     output: 'export',
 
     distDir: '../docs',
-    basePath: '/docs',
-    assetPrefix: 'https://nervaccio.github.io/nextjs-react-foundations',
-  }
+    assetPrefix: '/nextjs-react-foundations/',
+}
 
-  module.exports = nextConfig
+module.exports = nextConfig

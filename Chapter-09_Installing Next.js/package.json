@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "next dev",
-    "build": "next build"
+    "build": "next build && touch ../docs/.nojekyll"
   },
   "dependencies": {
     "next": "^14.0.1",
